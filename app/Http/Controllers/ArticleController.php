@@ -38,7 +38,6 @@ class ArticleController extends Controller
         }catch(\Exception){
             return view('error.error_message', ['message'=>'投稿に失敗しました'.$e->getmessage()]);
         }
-        
     }
 
     public function edit($id)
@@ -60,7 +59,6 @@ class ArticleController extends Controller
         }catch(\Exception $e){
             return view('error.error_message', ['message'=>'編集に失敗しました'.$e->getmessage()]);
         }
-        
     }
 
     public function confirm_destroy($id){
@@ -77,6 +75,5 @@ class ArticleController extends Controller
         catch(\Exception){
             return view('error.error_message', ['message'=>'消去に失敗しました'.$e->getmessage()]);
         }
-
     }
 }
