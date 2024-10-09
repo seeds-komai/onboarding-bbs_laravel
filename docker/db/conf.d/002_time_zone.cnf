@@ -1,3 +1,0 @@
-[mysqld]
-default-time-zone = '+9:00'
-explicit_defaults_for_timestamp = 1
